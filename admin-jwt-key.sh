@@ -1,4 +1,9 @@
 # Execute this
+# Header for this
+#{
+#  "alg": "RS256",
+#  "typ": "JWT"
+#}
 # Payload for this is (use jwt.io) to generate Bearer token:
 #{
 #  "sub": "1234567890",
@@ -6,6 +11,7 @@
 #  "iss": "admin-issuer",
 #  "iat": 1516239022
 #}
+
 kubectl create secret \
   generic app-admin-jwt  \
   --from-literal=kongCredType=jwt  \
