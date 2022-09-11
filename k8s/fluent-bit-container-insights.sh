@@ -1,6 +1,7 @@
-# Need to make executable and run as ./<script>
-ClusterName='saif-eks'
-LogRegion='us-east-1'
+#!/bin/bash
+# Usage: ./<script> <clustername> <region>
+ClusterName=$1
+LogRegion=$2
 FluentBitHttpPort='2020'
 FluentBitReadFromHead='Off'
 [[ ${FluentBitReadFromHead} = 'On' ]] && FluentBitReadFromTail='Off'|| FluentBitReadFromTail='On'
