@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: weatherapp
-        image: saifadam/weather_app:v1
+        image: saifadam/weather_app:v2
         ports:
         - containerPort: 5000
