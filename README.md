@@ -1,7 +1,7 @@
 ## Pre-requisites...
 1. Cloud provider creds should be configured
-2. Access to a k8s cluster is available to deploy the application
-example on eks `aws eks --region us-east-1 update-kubeconfig --name saif-eks`
+2. Access to a k8s cluster is available to deploy the application.
+<BR>example on eks `aws eks --region us-east-1 update-kubeconfig --name saif-eks`</BR>
 3. The cluster node group should have policy to allow fluentbit agent to send logs to Cloudwatch (on EKS)
 
 ## Steps (suggested)
